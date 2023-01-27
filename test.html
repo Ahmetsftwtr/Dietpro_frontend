@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Slayt göstericisi için stil tanımla */
+    .slider {
+      position: relative;
+      overflow: hidden;
+      height: 400px;
+    }
+
+    /* Slaytlar için stil tanımla */
+    .slider .slides {
+      display: flex;
+      position: relative;
+      height: 100%;
+      transition: transform 0.5s;
+    }
+
+    /* Her bir slayt için stil tanımla */
+    .slider .slides .slide {
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+    }
+
+    /* Önceki ve sonraki düğmeleri için stil tanımla */
+    .slider .prev,
+    .slider .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 48px;
+      cursor: pointer;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      outline: none;
+    }
+
+    .slider .prev:hover,
+    .slider .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .slider .prev {
+      left: 10px;
+    }
+
+    .slider .next {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Slayt göstericisini oluştur -->
+  <div class="slider">
+    <!-- Slaytları oluştur -->
+    <div class="slides">
+      <div class="slide" style="background-image: url('slide1.jpg')"></div>
+      <div class="slide" style="background-image: url('slide2.jpg')"></div>
+      <div class="slide" style="background-image: url('slide3.jpg')"></div>
+    </div>
+
+    <!-- Önceki düğmesini oluştur -->
+    <button class="prev">&lt;</button>
+    <!-- Sonraki düğmesini oluştur -->
+    <button class="next">&gt;</button>
+  </div>
+
+  <script>
+    // Slayt göstericisini seç
+    var slider = document.querySelector('.slider');
+    // Slaytları seç
+    var slides = slider.querySelector('.slides');
+    // Önceki düğmesini seç
+    var prevButton = slider.querySelector('.prev');
+    // Sonraki düğmesini seç
+    var nextButton = slider.querySelector('.next');
+    // Şu an gösterilen slay
+
+
+

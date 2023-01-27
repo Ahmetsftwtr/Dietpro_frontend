@@ -1,0 +1,58 @@
+.user_table {
+  background-color: white;
+  border-radius: 10px;
+  color:rgb(75, 68, 68);
+  margin:0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 97%;
+  margin-left: 10px;
+  
+}
+.user_table td, th {
+  text-align: left;
+  padding: 8px;
+}
+.user_table th {
+  color:rgb(95, 95, 95);
+}
+.user_table td {
+  border-bottom: 1px solid gainsboro;
+}
+.table_head {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap:5px;
+}
+.table_head input {
+  margin-left: auto;
+}
+
+.program_table {
+  background-color: white;
+  border-radius: 10px;
+  color:rgb(75, 68, 68);
+  margin:0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 97%;
+  margin-left: 10px;
+  
+}
+.program_table td, th {
+  text-align: left;
+  padding: 8px;
+}
+.program_table th {
+  color:rgb(95, 95, 95);
+}
+.program_table td {
+  border-bottom: 1px solid gainsboro;
+}
+
+@media screen and  (max-width:600px){
+  .program_table_head
+  {
+    display:flex;
+    flex-direction: column;
+  }
+}

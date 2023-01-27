@@ -1,0 +1,126 @@
+var diettable = document.getElementById('diet_table');
+
+var Count = 0;
+var Max = 10;
+function addProgram()
+{
+    if(Count<Max)
+    {
+    Count++;
+    diettable.innerHTML += `
+    <table class="program_table" style="margin-bottom: 20px;">
+        <tr>
+            <td>
+                <b>#${Count}</b>
+                <span>0 Kalori</span>
+                <span>0 Protein</span>
+                <span>0 Karbonhidrat</span>
+            </td>
+        </tr>
+        <tr class="program_table_head">
+            <td><input type="text" class="input" placeholder="Öğün Adı"></td>
+            <td><input type="text" class="input" placeholder="Öğün Açıklaması"></td>  
+            <td>
+                <select style="width:100px;">
+                    <option value="00:00">00:00</option>\
+                    <option value="00:30">00:30</option>\
+                    <option value="01:00">01:00</option>\
+                    <option value="01:30">01:30</option>\
+                    <option value="02:00">02:00</option>\
+                    <option value="02:30">02:30</option>\
+                    <option value="03:00">03:00</option>\
+                    <option value="03:30">03:30</option>\
+                    <option value="04:00">04:00</option>\
+                    <option value="04:30">04:30</option>\
+                    <option value="05:00">05:00</option>\
+                    <option value="05:30">05:30</option>\
+                    <option value="06:00">06:00</option>\
+                    <option value="06:30">06:30</option>\
+                    <option value="07:00">07:00</option>\
+                    <option value="07:30">07:30</option>\
+                    <option value="08:00" selected="selected">08:00</option>\
+                    <option value="08:30">08:30</option>\
+                    <option value="09:00">09:00</option>\
+                    <option value="09:30">09:30</option>\
+                    <option value="10:00">10:00</option>\
+                    <option value="10:30">10:30</option>\
+                    <option value="11:00">11:00</option>\
+                    <option value="11:30">11:30</option>\
+                    <option value="12:00" >12:00</option>\
+                    <option value="12:30">12:30</option>\
+                    <option value="13:00">13:00</option>\
+                    <option value="13:30">13:30</option>\
+                    <option value="14:00">14:00</option>\
+                    <option value="14:30">14:30</option>\
+                    <option value="15:00">15:00</option>\
+                    <option value="15:30">15:30</option>\
+                    <option value="16:00">16:00</option>\
+                    <option value="16:30">16:30</option>\
+                    <option value="17:00">17:00</option>\
+                    <option value="17:30">17:30</option>\
+                    <option value="18:00">18:00</option>\
+                    <option value="18:30">18:30</option>\
+                    <option value="19:00">19:00</option>\
+                    <option value="19:30">19:30</option>\
+                    <option value="20:00">20:00</option>\
+                    <option value="20:30">20:30</option>\
+                    <option value="21:00">21:00</option>\
+                    <option value="21:30">21:30</option>\
+                    <option value="22:00">22:00</option>\
+                    <option value="22:30">22:30</option>\
+                    <option value="23:00">23:00</option>\
+                    <option value="23:30">23:30</option>\
+                </select>
+            </td>
+        </tr>
+
+<tbody id="foodlist">
+</tbody>
+
+<tr>
+<th>
+<button type="button" onclick="addFood()" class="button button-2 button-animation d-flex" style="margin:10px;"><span class="material-symbols-outlined">add</span>Besin ekle</button>
+</th>
+</tr>
+</table>`;
+}
+else
+{
+    var ShowMessage = document.getElementById('toast');
+    ShowMessage.style.display = "block";
+    var message = document.getElementById('toastmessage');
+    message.textContent = "Maximum 10 adet öğün ekleyebilirsin.";
+
+setTimeout(function(){
+    document.getElementById("toast").style.display = "none";
+}, 4000);
+}
+}
+
+function addFood()
+{
+    var FoodsList = document.getElementById('foodlist');
+    FoodsList.innerHTML += `
+    <tr>
+        <th>Besin <b>#1</b></th>
+    </tr>
+        <tr class="program_table_head" style="background-color:#EEFBE5;">
+        <td><input type="text" class="input" placeholder="Ara veya Manuel gir"></td>
+        <td><input type="text" class="input" placeholder="Miktar">
+            <select style="width:auto">
+                <option>100 Gram</option>
+                <option>Adet (Küçük)</option>
+                <option>Adet (Orta)</option>
+                <option>Adet (Büyük)</option>
+                <option>Adet</option>
+                <option>Çeyrek</option>
+                <option>Porsiyon</option>
+                <option>Su bardağı (200ml lik)</option>
+                <option>Çorba kaşığı</option>
+                <option>Tatlı kaşığı (5g lık)</option>
+                <option>Porsiyon</option>
+            </select></td>
+    </tr>
+    
+    `;
+}

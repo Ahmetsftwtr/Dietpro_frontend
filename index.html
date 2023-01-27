@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/kit.css" rel="stylesheet">
+    <link href="css/kit2.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    
+<div class="layout" id="layout">
+
+<div class="layout_right" id="rightmenu"> 
+    <span class="material-symbols-outlined menu_close" id="menuclose">close</span>    
+    <h1>DietPRO</h1>
+<ul>
+    <a href="index.html"><li><span class="material-symbols-outlined">home</span> Anasayfa</li></a>
+    <a href="uyelerim.html"><li><span class="material-symbols-outlined">groups</span> Üyelerim</li></a>
+    <li><span class="material-symbols-outlined">sms</span> Sms işlemleri</li>
+    <li><span class="material-symbols-outlined">duo</span> Toplantı oluştur</li>
+    <li><span class="material-symbols-outlined">lab_profile</span> Rapolar</li>
+</ul>
+</div>
+
+
+<div class="layout_center" id="layoutcenter">
+    <div class="layout_center_head">
+        <span class="material-symbols-outlined menu_button" id="menubutton">menu</span>
+        <div class="head_notification">
+        <span class="material-symbols-outlined">notifications</span>
+        <span></span>
+        </div> 
+        <span class="material-symbols-outlined md-48">dark_mode</span>
+        <div class="head_user_avatar" id="headuserbox">
+            <img  src="assets/avatar.png">
+            <div class="head_user_box"  id="headuserboxopen">
+            <ul>
+                <li><img  src="assets/avatar.png">Ahmet Çetin</li>
+                <hr>
+                <li><span class="material-symbols-outlined">account_circle</span>Profil</li>
+                <li><span class="material-symbols-outlined">mail</span>Gelen kutusu</li>
+                <hr>
+                <li><span class="material-symbols-outlined">settings</span>Hesap ayarları</li>
+                <li><span class="material-symbols-outlined">logout</span>Çıkış yap</li>
+            </ul>
+        </div>
+
+        </div>
+    </div>
+
+<div class="layout_center_body">
+    <div class="card"  style="padding:10px;">
+        <h3>Toast</h3>
+<button type="button" class="button button-2" id="show-toast">Show Toast</button>
+<div class="toast" id="toast">
+    <div class="toast-header">
+        <span>Toast Başlık</span>
+        <span>1dk önce</span>
+    </div>
+    <hr>   
+    <div class="toast-body">
+        <p>Merhaba bu toastın içeriğidir</p>
+    </div>
+</div>
+
+
+
+
+    </div>
+    <div class="card" style="padding:10px;display:flex;gap:20px;justify-content: space-between;align-items: center;width: 400px;">
+<span>
+    <h3>Button</h3>
+    <button type="button" class="button button-1">Kayıt ol</button>
+<br>
+<br>
+<button type="button" class="button button-2">Giriş yap</button>
+<br>
+<br>
+<button type="button" class="button button-3">Sil</button>
+</span>
+<span>
+<h3>Button İcon</h3>
+<button type="button" class="button button-1 d-flex"> <span class="material-symbols-outlined">
+    how_to_reg
+
+    </span>Kayıt ol</button>
+<br>
+<br>
+<button type="button" class="button button-2 d-flex"> <span class="material-symbols-outlined">
+    login
+    </span>Giriş yap</button>
+<br>
+<br>
+<button type="button" class="button button-3 d-flex">
+    <span class="material-symbols-outlined">
+delete_sweep
+</span>
+    Sil</button>
+</span>
+<span>
+<h3>Animation Button</h3>
+<button type="button" class="button button-1 button-animation ">Kayıt ol</button>
+<br>
+<br>
+<button type="button" class="button button-2 button-animation ">Giriş yap</button>
+<br>
+<br>
+<button type="button" class="button button-3 button-animation">Sil</button>
+</span>
+</div>
+    <div class="card" style="padding:10px;">
+        <h3>İnput</h3>
+        <input class="input" type="text" placeholder="Search">
+        <br>
+        <br>
+        <input class="input focus" type="text" placeholder="Search">
+            <br>
+        <br>
+        <select>
+            <option>Select Test Option</option>
+            <option>TEST</option>
+            <option>TEST</option>
+
+        </select>
+        <br>
+        <br>
+        <input type="checkbox"> checkbox 1
+        <br>
+        <input type="checkbox" class="checkbox-1"> checkbox 2
+        <input type="checkbox" class="checkbox-2"> checkbox 3
+
+        <br>
+        <br>
+        <input type="radio"> radio
+        <br>
+        <input type="range"  min="0" max="50">
+<br>
+<input type="range" class="range-1" min="0" max="50">
+<br>
+<input type="range" class="range-2" min="0" max="50">
+<br>
+<input type="range" class="range-3" min="0" max="50">
+
+    </div>
+    <div class="card" style="padding:10px;">
+        <h3>Alert</h3>
+<div class="alert alert-1">ALERT 1 MERHABALAR ÖRNEK BİR ALERT</div>
+<br>
+<div class="alert alert-2">ALERT 2</div>
+<br>
+<div class="alert alert-3">ALERT 3</div>
+    </div>
+</div>
+
+<div class="card" style="padding:10px;">
+    <h3>Steps</h3>
+<div class="step">
+<ul class="steps-list">
+    <li name="Üye bilgileri">1</li>
+    <li name="Step2">2</li>
+    <li name="Step3">3</li>
+
+</ul>
+</div>
+<div style="clear:both;"></div>
+<br>
+<br>
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

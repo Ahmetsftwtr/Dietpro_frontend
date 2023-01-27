@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/kit.css" rel="stylesheet">
+    <link href="css/kit2.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+<body>
+    
+<div class="layout" id="layout">
+
+<div class="layout_right" id="rightmenu"> 
+    <span class="material-symbols-outlined menu_close" id="menuclose">close</span>    
+    <h1>DietPRO</h1>
+<ul>
+    <a href="index.html"><li><span class="material-symbols-outlined">home</span> Anasayfa</li></a>
+    <a href="uyelerim.html"><li><span class="material-symbols-outlined">groups</span> Üyelerim</li></a>
+    <li><span class="material-symbols-outlined">sms</span> Sms işlemleri</li>
+    <li><span class="material-symbols-outlined">duo</span> Toplantı oluştur</li>
+    <li><span class="material-symbols-outlined">lab_profile</span> Rapolar</li>
+</ul>
+</div>
+
+
+<div class="layout_center" id="layoutcenter">
+    <div class="layout_center_head">
+        <span class="material-symbols-outlined menu_button" id="menubutton">menu</span>
+        <div class="head_notification">
+        <span class="material-symbols-outlined">notifications</span>
+        <span></span>
+        </div> 
+        <span class="material-symbols-outlined md-48">dark_mode</span>
+        <div class="head_user_avatar" id="headuserbox">
+            <img  src="assets/avatar.png">
+            <div class="head_user_box"  id="headuserboxopen">
+            <ul>
+                <li><img  src="assets/avatar.png">Ahmet Çetin</li>
+                <hr>
+                <li><span class="material-symbols-outlined">account_circle</span>Profil</li>
+                <li><span class="material-symbols-outlined">mail</span>Gelen kutusu</li>
+                <hr>
+                <li><span class="material-symbols-outlined">settings</span>Hesap ayarları</li>
+                <li><span class="material-symbols-outlined">logout</span>Çıkış yap</li>
+            </ul>
+        </div>
+
+        </div>
+    </div>
+
+    <p class="d-flex" style="font-size: 1.5rem;color:rgb(68, 68, 68);margin:20px;"><span class="material-symbols-outlined">person_add</span>Yeni üye oluştur</p>
+<div class="create_user" id="app">
+    <div class="create_user_form" >
+        <div class="user_card">
+            <div class="user_card_front">
+            <span class="material-symbols-outlined">account_circle</span>
+            <span style="font-family:'Courier New', Courier, monospace;">{{ name }}</span>
+            <span style="font-family:'Courier New', Courier, monospace;">{{ lastname }}</span>
+            <span class="material-symbols-outlined">psychiatry</span>
+            <span></span>
+        </div>
+        </div>
+
+
+    </div>
+
+<div class="create_user_form">
+
+    <div class="create_user_form_input"><input v-model="name"  type="input" class="input" placeholder="İsim" id="name" maxlength="15"><span id="namevalidation"></span></div>
+    <div class="create_user_form_input"><input v-model="lastname" type="input" class="input" placeholder="Soyisim" v-model="lastname"maxlength="15"><span></span></div>
+    <div class="create_user_form_input"><input v-model="email" type="email" class="input" placeholder="E-posta"maxlength="50"><span></span></div>
+    <div class="create_user_form_input"><input v-model="phone" type="tel" class="input" placeholder="Telefon numarası" maxlength="14"><span></span></div>
+    <div class="create_user_form_input"><input v-model="password" type="password" class="input" placeholder="Şifre" maxlength="15"><span></span></div>
+    <div class="create_user_form_input"><select>
+        <option value="" disabled selected>Cinsiyet</option>
+            <option style="color:#0081C9;">Erkek</option>
+            <option style="color: #FD8A8A;">Kadın</option>    
+        </select><span></span></div>   
+    <div class="create_user_form_input"> <input type="date"  class="input" placeholder="Doğum tarihi" style="width: 200px;" required><span></span></div>
+<span><input type="checkbox" class="checkbox">Üye oluşturma politikasını kabul ediyorum.</span>
+    <button @click="Create" type="button" class="button button-2 button-animation d-flex" ><span class="material-symbols-outlined">person_add</span>Üyeyi oluştur</button>
+
+</div> 
+
+</div>
+</div>    
+
+<script src="api/app.js"></script>
+<script src="js/script.js"></script>
+</div>
+</body>
+</html>

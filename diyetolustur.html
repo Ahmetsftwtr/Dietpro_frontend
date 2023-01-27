@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/kit.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    
+<div class="layout" id="layout">
+
+<div class="layout_right" id="rightmenu"> 
+    <span class="material-symbols-outlined menu_close" id="menuclose">close</span>    
+    <h1>DietPRO</h1>
+<ul>
+    <a href="index.html"><li><span class="material-symbols-outlined">home</span> Anasayfa</li></a>
+    <a href="uyelerim.html"><li><span class="material-symbols-outlined">groups</span> Üyelerim</li></a>
+    <li><span class="material-symbols-outlined">sms</span> Sms işlemleri</li>
+    <li><span class="material-symbols-outlined">duo</span> Toplantı oluştur</li>
+    <li><span class="material-symbols-outlined">lab_profile</span> Rapolar</li>
+</ul>
+</div>
+
+<div class="toast" id="toast">
+    <div class="toast-header">
+        <span>Uyarı</span>
+        <span></span>
+    </div>
+    <hr>   
+    <div class="toast-body">
+        <p id="toastmessage"></p>
+    </div>
+</div>
+
+
+
+<div class="layout_center" id="layoutcenter">
+    <div class="layout_center_head">
+        <span class="material-symbols-outlined menu_button" id="menubutton">menu</span>
+        <div class="head_notification">
+        <span class="material-symbols-outlined">notifications</span>
+        <span></span>
+        </div> 
+        <span class="material-symbols-outlined md-48">dark_mode</span>
+        <div class="head_user_avatar" id="headuserbox">
+            <img  src="assets/avatar.png">
+            <div class="head_user_box"  id="headuserboxopen">
+            <ul>
+                <li><img  src="assets/avatar.png">Ahmet Çetin</li>
+                <hr>
+                <li><span class="material-symbols-outlined">account_circle</span>Profil</li>
+                <li><span class="material-symbols-outlined">mail</span>Gelen kutusu</li>
+                <hr>
+                <li><span class="material-symbols-outlined">settings</span>Hesap ayarları</li>
+                <li><span class="material-symbols-outlined">logout</span>Çıkış yap</li>
+            </ul>
+        </div>
+
+        </div>
+    </div>
+
+
+<h2 style="  color:rgb(75, 68, 68);">Uye Ad > Diyet oluştur</h2>
+<input type="text" class="input" placeholder="Diyet adı giriniz">
+<button type="button"  class="button button-2 button-animation d-flex" style="margin:10px;float:right;"><span class="material-symbols-outlined">save</span>Kaydet</button>
+<button type="button" onclick="addProgram()" class="button button-2 button-animation d-flex" style="margin:10px;"><span class="material-symbols-outlined">add_notes</span>Öğün ekle</button>
+
+<div id="diet_table">
+</div>
+
+
+<script src="js/script.js"></script>
+<script src="js/diet.js"></script>
+
+</div>
+</body>
+</html>
