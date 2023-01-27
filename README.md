@@ -1,7 +1,7 @@
 # Dietpro_frontend
 DietPro Frontend Work
 
-![screencapture-file-C-Users-Ahmet-Desktop-Proje-frontend-index-html-2023-01-28-01_33_59](https://user-images.githubusercontent.com/95828884/215219558-5096fad7-07e2-4db6-b4a1-456f8feffb03.png)
+![screencapture-file-C-Users-Ahmet-Desktop-Proje-frontend-index-html-2023-01-28-01_53_58](https://user-images.githubusercontent.com/95828884/215221526-d89d650a-0133-4571-9858-f1f1a544954a.png)
 ![screencapture-file-C-Users-Ahmet-Desktop-Proje-frontend-uyelerim-html-2023-01-28-01_36_08 (1)](https://user-images.githubusercontent.com/95828884/215219577-a477ddc3-5f3c-41ae-bd0f-af599ea23c98.png)
 ![screencapture-file-C-Users-Ahmet-Desktop-Proje-frontend-uyeolustur-html-2023-01-28-01_43_16](https://user-images.githubusercontent.com/95828884/215220293-1fc10a1e-8ab2-4be5-bbaf-63b6e5be67da.png)
 ![screencapture-file-C-Users-Ahmet-Desktop-Proje-frontend-uyeprofil-html-2023-01-28-01_34_59](https://user-images.githubusercontent.com/95828884/215219615-ef996234-9f1f-4cdd-bb25-cb00b65169a7.png)
